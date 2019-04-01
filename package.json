@@ -1,6 +1,6 @@
 {
   "name": "homebridge-mi-dehumidifier",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "XiaoMi DeHumidifier plugin for HomeBridge(https://github.com/nfarina/homebridge).",
   "keywords": [
     "homebridge-plugin"
