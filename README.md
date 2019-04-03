@@ -5,7 +5,7 @@
 
 Thanks for [Mr.Yin](https://github.com/YinHangCode/homebridge-mi-fan/) , [nfarina](https://github.com/nfarina)(the author of [homebridge](https://github.com/nfarina/homebridge)), [OpenMiHome](https://github.com/OpenMiHome/mihome-binary-protocol), [aholstenson](https://github.com/aholstenson)(the author of [miio](https://github.com/aholstenson/miio)), all other developer and testers.   
   
-
+![](https://github.com/hassbian-ABC/homebridge-mi-dehumidifier/blob/master/images/dehumidifier.jpeg)
 
  
 ## Installation
