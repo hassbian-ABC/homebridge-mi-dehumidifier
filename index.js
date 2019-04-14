@@ -47,7 +47,7 @@ function DeMiHumidifier(log, config) {
     this.config = config;
     
     this.log.info("[MiDeHumidifierPlatform][INFO]***********************************************************");
-    this.log.info("[MiDeHumidifierPlatform][INFO]          DeMiHumidifierPlatform v%s by hassbian-ABC 0.0.1");
+    this.log.info("[MiDeHumidifierPlatform][INFO]          DeMiHumidifierPlatform v%s by hassbian-ABC 0.1.0");
     this.log.info("[MiDeHumidifierPlatform][INFO]  GitHub: https://github.com/hassbian-ABC/homebridge-mi-dehumidifier ");
     this.log.info("[MiDeHumidifierPlatform][INFO]                                                                  ");
     this.log.info("[MiDeHumidifierPlatform][INFO]***********************************************************");
@@ -254,10 +254,10 @@ DeMiHumidifier.prototype = {
             .getCharacteristic(Characteristic.CurrentTemperature)
             .on('get', function(callback) {
                  that.device.call("get_prop", ["temp"]).then(result => {
-		 that.log.debug("[MiHumidifier][DEBUG]HumidifierDehumidifier - getTemperature: " + result);
+		 that.log.debug("[DeMiHumidifier][DEBUG] - getTemperature: " + result);
                     callback(null, result[0]);
                  }).catch(function(err) {
-		    that.log.debug("[MiHumidifier][DEBUG]HumidifierDehumidifier - getTemperature Error: " + err);
+		    that.log.debug("[DeMiHumidifier][DEBUG] - getTemperature Error: " + err);
 		    callback(err);
 	     });
         }.bind(this));
